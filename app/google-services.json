@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1026337185860",
+    "firebase_url": "https://szkola-toledo-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "szkola-toledo",
+    "storage_bucket": "szkola-toledo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026337185860:android:e530bb58d89d5adb229c11",
+        "android_client_info": {
+          "package_name": "pl.ostrowskiartur.szkolatoledo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026337185860-vlgiup79118fg6sr30tq6fikah3605mv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcMnhx2q7XEwid81AEMr1Q063CHwNC-gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026337185860-vlgiup79118fg6sr30tq6fikah3605mv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="colorPrimary">#007EA5</color>
+    <color name="colorPrimaryDark">#006D8F</color>
+    <color name="colorAccent">#007EA5</color>
+    <!--    <color name="colorPrimary">#01d799</color>-->
+    <!--    <color name="colorPrimaryDark">#00c685</color>-->
+    <!--    <color name="colorAccent">#01d799</color>-->
+
+    <color name="background">#f5f6f8</color>
+
+    <color name="pie_chart_ao">#2E5077</color>
+    <color name="pie_chart_mp">#611C35</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="black_transparent_80">#CC000000</color>
+
+    <color name="default_text">#00A5D8</color>
+    <!--    <color name="default_text">#00caa2</color>-->
+    <color name="gray_text">#606060</color>
+    <color name="separator">#efefef</color>
+
+    <color name="bottom_nav_bar">#2C6377</color>
+
+</resources>
