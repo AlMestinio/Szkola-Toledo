@@ -22,6 +22,7 @@
         android:name="pl.ostrowskiartur.szkolatoledo.ui.home.HomeFragment"
         android:label="Toledo"
         tools:layout="@layout/fragment_home">
+
     </fragment>
 
 </navigation>

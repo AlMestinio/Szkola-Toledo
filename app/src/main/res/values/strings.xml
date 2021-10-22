@@ -9,6 +9,10 @@
     <string name="fragment_login.password_forgot">Zapomniałeś/aś hasła?</string>
     <string name="fragment_login.login_button">Zaloguj</string>
 
+    <string name="menu.quiz">Quiz</string>
+    <string name="menu.logout">Wyloguj</string>
+
+
     <string name="field_required">To pole jest wymagane</string>
     <string name="firebase_exceptions.invalid_email">Adres email jest źle sformatowany.</string>
     <string name="firebase_exceptions.wrong_password">Niepoprawny email albo hasło.</string>
