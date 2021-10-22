@@ -5,11 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
-import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_login.*
 import pl.ostrowskiartur.szkolatoledo.R
 import pl.ostrowskiartur.szkolatoledo.ui.BaseFragment
 import pl.ostrowskiartur.szkolatoledo.utis.getSimpleName
+import pl.ostrowskiartur.szkolatoledo.utis.hideKeyboard
 import pl.ostrowskiartur.szkolatoledo.utis.toast
 
 class LoginFragment: BaseFragment(), LoginContract.View, View.OnClickListener {
@@ -35,7 +35,7 @@ class LoginFragment: BaseFragment(), LoginContract.View, View.OnClickListener {
     }
 
     override fun initView() {
-        btContinue.setOnClickListener(this)
+        btLogIn.setOnClickListener(this)
     }
 
     override fun showHomeView() {
@@ -65,7 +65,8 @@ class LoginFragment: BaseFragment(), LoginContract.View, View.OnClickListener {
 
     override fun onClick(v: View?) {
         when (v?.id) {
-            btContinue.id -> {
+            btLogIn.id -> {
+                hideKeyboard()
                 isProgressBarVisible(true)
                 presenter.login(etEmail, etPassword, database, auth)
             }

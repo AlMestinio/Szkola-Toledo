@@ -118,7 +118,7 @@
         app:layout_constraintEnd_toEndOf="@+id/glEnd" />
 
     <Button
-        android:id="@+id/btContinue"
+        android:id="@+id/btLogIn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_22sdp"
