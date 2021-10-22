@@ -21,6 +21,11 @@ open class BaseFragment: Fragment(), BaseView {
         mainActivity = (activity as MainActivity)
     }
 
+    override fun onResume() {
+        super.onResume()
+        mainActivity.updateToolbar()
+    }
+
     override fun initView() {}
 
     override fun showToast(message: String) = toast(message)

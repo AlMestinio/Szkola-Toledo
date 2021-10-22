@@ -8,7 +8,7 @@
 
     <color name="colorPrimary">#516179</color>
     <color name="colorPrimaryDark">@color/black</color>
-    <color name="colorAccent">#02E1ED</color>
+    <color name="colorAccent">#00A5D8</color>
     <color name="light_gray">#dbdbdb</color>
     <color name="gray">#7e7e7e</color>
     <color name="semi_gray">#979797</color>

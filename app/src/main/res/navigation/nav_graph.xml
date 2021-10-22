@@ -10,6 +10,18 @@
         android:name="pl.ostrowskiartur.szkolatoledo.ui.login.LoginFragment"
         android:label="Login"
         tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_Login_to_home"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="pl.ostrowskiartur.szkolatoledo.ui.home.HomeFragment"
+        android:label="Toledo"
+        tools:layout="@layout/fragment_home">
     </fragment>
 
 </navigation>

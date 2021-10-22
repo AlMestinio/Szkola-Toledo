@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_login.*
 import pl.ostrowskiartur.szkolatoledo.R
 import pl.ostrowskiartur.szkolatoledo.ui.BaseFragment
@@ -39,12 +40,11 @@ class LoginFragment: BaseFragment(), LoginContract.View, View.OnClickListener {
 
     override fun showHomeView() {
         isProgressBarVisible(false)
-
+        mainActivity.navigate(R.id.action_Login_to_home)
     }
 
     override fun showRegisterView() {
         isProgressBarVisible(false)
-
     }
 
     override fun showEditTextError(view: EditText?) {
