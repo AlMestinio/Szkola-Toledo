@@ -1,12 +1,21 @@
 <resources>
     <string name="app_name">Szkoła Toledo</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="toledo">Toledo</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="fragment_login.email_text">Email</string>
+    <string name="fragment_login.email_hint">Wpisz swój adres email</string>
+    <string name="fragment_login.password_text">Hasło</string>
+    <string name="fragment_login.password_hint">Wpisz swoje hasło</string>
+    <string name="fragment_login.password_forgot">Zapomniałeś/aś hasła?</string>
+    <string name="fragment_login.login_button">Zaloguj</string>
+
+    <string name="field_required">To pole jest wymagane</string>
+    <string name="firebase_exceptions.invalid_email">Adres email jest źle sformatowany.</string>
+    <string name="firebase_exceptions.wrong_password">Niepoprawny email albo hasło.</string>
+    <string name="firebase_exceptions.email_already_in_use">Ten adres email jest już w użyciu.</string>
+    <string name="firebase_exceptions.user_disabled">Użytkownik został wyłączony przez administratora.</string>
+    <string name="firebase_exceptions.user_not_found">Nie znaleziono użytkownika.</string>
+    <string name="firebase_exceptions.too_many_requests">Za dużo nieudanych prób. Spróbuj ponownie później.</string>
+    <string name="firebase_exceptions.unexpected_error_try_later">Wystąpił nieoczekiwany błąd. Spróbuj ponownie później.</string>
+
 </resources>

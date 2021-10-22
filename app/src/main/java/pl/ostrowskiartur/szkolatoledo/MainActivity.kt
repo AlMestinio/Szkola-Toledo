@@ -1,43 +1,49 @@
 package pl.ostrowskiartur.szkolatoledo
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
+import android.view.View
+import androidx.appcompat.widget.Toolbar
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import com.google.firebase.FirebaseApp
-import com.google.firebase.database.ktx.database
-import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
+import pl.ostrowskiartur.szkolatoledo.utis.then
 
 class MainActivity : AppCompatActivity() {
+    companion object {
+        private const val LOGIN = "Login"
+    }
 
     private lateinit var appBarConfiguration: AppBarConfiguration
+
+    private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main) as NavHostFragment
+        navController = navHostFragment.findNavController()
+
+        if (navController.currentDestination?.label != null && navController.currentDestination!!.label == LOGIN) {
+            changeToolbarVisibility(false)
+        } else {
+            changeToolbarVisibility(true)
+            tvTitle?.text = navController.currentDestination?.label
+        }
+
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
         FirebaseApp.initializeApp(this)
 
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.menu_main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.action_settings -> true
-            else -> super.onOptionsItemSelected(item)
-        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -45,4 +51,13 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
+
+    fun changeProgressBarVisibility(isVisible: Boolean) {
+        progressBar?.visibility = (isVisible then View.VISIBLE ?: View.GONE)
+    }
+
+    private fun changeToolbarVisibility(isVisible: Boolean) {
+        appBarLayout?.visibility = (isVisible then View.VISIBLE ?: View.INVISIBLE)
+    }
+
 }

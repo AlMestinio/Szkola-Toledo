@@ -6,20 +6,24 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
 
-    <color name="colorPrimary">#007EA5</color>
-    <color name="colorPrimaryDark">#006D8F</color>
-    <color name="colorAccent">#007EA5</color>
-    <!--    <color name="colorPrimary">#01d799</color>-->
-    <!--    <color name="colorPrimaryDark">#00c685</color>-->
-    <!--    <color name="colorAccent">#01d799</color>-->
+    <color name="colorPrimary">#516179</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">#02E1ED</color>
+    <color name="light_gray">#dbdbdb</color>
+    <color name="gray">#7e7e7e</color>
+    <color name="semi_gray">#979797</color>
+    <color name="dark_gray">#696969</color>
+    <color name="bg_color">#f7f7f7</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="shadow">#d0d8dc</color>
+    <color name="transparent">#00FFFFFF</color>
 
     <color name="background">#f5f6f8</color>
 
     <color name="pie_chart_ao">#2E5077</color>
     <color name="pie_chart_mp">#611C35</color>
-
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
 
     <color name="black_transparent_80">#CC000000</color>
 
